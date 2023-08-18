@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Xe 2 Bánh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        .contact p {
+            margin-bottom: 10px;
+        }
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+        .contact-icons {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .contact-icons a {
+            display: block;
+            margin-bottom: 10px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            line-height: 20px;
+        }
+        .running-text {
+            background-color: #333;
+            color: white;
+            padding: 5px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+        .running-text p {
+            margin: 0;
+            white-space: nowrap;
+            animation: runningText 10s linear infinite;
+        }
+        @keyframes runningText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .district-grid {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        .district-info {
+            flex-basis: calc(25% - 20px);
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .district-info img {
+            width: 200px;
+            height: 100px;
+            margin-right: 20px;
+			margin-left: 40px;
+            object-fit: cover;
+            border-radius: 5px;
+			text-align: center;
+			
+        }
+        .district-info div {
+            flex-grow: 1;
+        }
+        .district-info h3 {
+            margin-top: 0;
+			text-align: center;
+        }
+        .district-info p {
+            margin: 0;
+        }
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .district-info {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .district-info {
+                flex-basis: calc(100% - 20px);
+            }
+            .district-grid {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Đặt Xe 2 Bánh</h1>
+    </header>
+
+    <div class="running-text">
+        <p>Đặt Xe Nhanh Chóng Giá Rẻ</p>
+    </div>
+    
+    <div class="content">
+        <h2>Đặt Xe 2 Bánh Nhanh Chóng và Dễ Dàng</h2>
+        <p>Hãy liên hệ ngay để đặt xe và đưa bạn đến đích một cách an toàn và nhanh chóng.</p>
+
+        <div class="district-grid">
+            <!-- Quận 1 -->
+            <div class="district-info">
+                <img src="hinh a.jpg" alt="Quận 1">
+                <div>
+                    <h3>Đặt Xe Ở Quận 1</h3>
+                    <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 1. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+                </div>
+            </div>
+
+            <!-- Quận 2 -->
+            <div class="district-info">
+                <img src="hinh a.jpg" alt="Quận 2">
+                <div>
+                    <h3>Đặt Xe Ở Quận 2</h3>
+                    <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 2. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+                </div>
+            </div>
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 3">
+            <div>
+                <h3>Đặt Xe Ở Quận 3</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 3. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 4">
+            <div>
+                <h3>Đặt Xe Ở Quận 4</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 4. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 5">
+            <div>
+                <h3>Đặt Xe Ở Quận 5</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 5. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 6">
+            <div>
+                <h3>Đặt Xe Ở Quận 6</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 6. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 7">
+            <div>
+                <h3>Đặt Xe Ở Quận 7</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 7. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 8">
+            <div>
+                <h3>Đặt Xe Ở Quận 8</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 8. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 9">
+            <div>
+                <h3>Đặt Xe Ở Quận 9</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 9. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 10">
+            <div>
+                <h3>Đặt Xe Ở Quận 10</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 10. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 11">
+            <div>
+                <h3>Đặt Xe Ở Quận 11</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 11. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận 12">
+            <div>
+                <h3>Đặt Xe Ở Quận 12</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận 12. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận Bình Thạnh">
+            <div>
+                <h3>Đặt Xe Ở Quận Bình Thạnh</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận Bình Thạnh. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận Bình Tân">
+            <div>
+                <h3>Đặt Xe Ở Quận Bình Tân</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận Bình Tân. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận Gò Vấp">
+            <div>
+                <h3>Đặt Xe Ở Quận Gò Vấp</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận Gò Vấp. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Quận Thủ Đức">
+            <div>
+                <h3>Đặt Xe Ở Quận Thủ Đức</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Quận Thủ Đức. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Tỉnh Bình Dương">
+            <div>
+                <h3>Đặt Xe Ở Tỉnh Bình Dương</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Tỉnh Bình Dương. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Tỉnh Đồng Nai">
+            <div>
+                <h3>Đặt Xe Ở Tỉnh Đồng Nai</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Tỉnh Đồng Nai. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Tỉnh Long An">
+            <div>
+                <h3>Đặt Xe Ở Tỉnh Long An</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Tỉnh Long An. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+        <div class="district-info">
+            <img src="hinh a.jpg" alt="Tỉnh Tây Ninh">
+            <div>
+                <h3>Đặt Xe Ở Tỉnh Tây Ninh</h3>
+                <p>Đặt xe ôm công nghệ nhanh chóng và tiện lợi tại Tỉnh Tây Ninh. Hãy liên hệ ngay để biết thêm chi tiết.</p>
+            </div>
+        </div>
+
+
+            <!-- Thêm các khung thông tin cho các quận và tỉnh khác ở đây -->
+        </div>
+
+        <div class="contact">
+            <p>Liên hệ ngay qua:</p>
+            <a href="tel:0123456789">Số điện thoại: 0123 456 789</a>
+            <a href="https://zalo.me/0123456789">Zalo: 0123 456 789</a>
+            <a href="https://www.facebook.com/yourpage">Facebook: Tên Trang Của Bạn</a>
+        </div>
+    </div>
+
+    <div class="contact-icons">
+        <a href="tel:0123456789">📞</a>
+        <a href="https://zalo.me/0123456789">💬</a>
+        <a href="https://www.facebook.com/yourpage">👍</a>
+    </div>
+</body>
+</html>
